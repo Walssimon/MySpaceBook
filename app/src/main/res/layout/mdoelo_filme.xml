@@ -3,14 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:background="#252525"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_margin="05dp"
+    >
 
     <LinearLayout
-        android:layout_width="150dp"
+        android:layout_width="130dp"
         android:layout_height="175dp"
-        android:layout_margin="12dp"
-        android:background="#FFC107">
+        android:background="#FFC107"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:id="@+id/mImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mario"
+            android:scaleType="centerCrop"
 
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -24,12 +35,14 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/mTit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
                 android:textColor="@color/white" />
 
             <EditText
+                android:id="@+id/mDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Descrição" />
@@ -38,23 +51,54 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:gravity="center">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
             <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:numStars="3"
-                android:stepSize="@integer/material_motion_duration_long_2"
-
+                android:numStars="5"
+                android:stepSize="@integer/material_motion_duration_long_1"
+                android:progressBackgroundTint="#FFC107"
                 />
-
             <EditText
+                android:id="@+id/mNota"
+                android:textSize="22sp"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:drawableBottom="@drawable/ic_baseline_child_care"
-
-                />
-
+                android:layout_height="wrap_content"
+                android:text="4,2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:tint="#AE0000"
+                    android:layout_margin="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_thumb_down_off_alt"
+                    /><ImageView
+                android:tint="#D3D3D3"
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_sentiment_neutral">
+                    /><ImageView
+                android:tint="#00C521"
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_thumb_up_off_alt">
+                    />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

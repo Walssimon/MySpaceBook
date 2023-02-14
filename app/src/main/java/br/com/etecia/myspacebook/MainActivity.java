@@ -11,8 +11,10 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
     ListView idlistaValores;
+    int imagem [] = {R.drawable.mario,R.drawable.barbie,R.drawable.besouro,R.drawable.flash,R.drawable.miles};
+    String titulo [] = {"Mario Bros. O Filme","Barbie","Besouro Azul","The Flash","Spider-Man Através do Spiderverso"
 
-
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
