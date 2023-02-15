@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             "armadura com habilidades estraordinarias","O velocista escalarte decide viajar no tempo para salvar a " +
             "sua mãe, mas quando ele faz isso ele coloca todo o universo em risco","Miles o homem aranha viaja atraves de varios spider-versos" +
             "mas por um erro ele é perseguido pelos outros totens da aranha"};
-    String score [] ={"5,0"};
+    String score [] ={"5,0","5,0","5,0","5,0","5,0"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
